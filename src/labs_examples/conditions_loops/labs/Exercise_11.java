@@ -1,5 +1,7 @@
 package labs_examples.conditions_loops.labs;
 
+import java.awt.*;
+
 /**
  * Conditions and Loops Exercise 11: Nested for loop
  *
@@ -22,5 +24,12 @@ package labs_examples.conditions_loops.labs;
  */
 
 public class Exercise_11 {
-
+    public static void main(String[] args) {
+        for (int row = 1; row <= 10; row++) {
+            for (int col = 1; col <= 10; col++) {
+                System.out.print(row * col + "\t");
+            }
+            System.out.println();
+        }
+    }
 }

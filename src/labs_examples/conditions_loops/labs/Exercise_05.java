@@ -1,4 +1,5 @@
 package labs_examples.conditions_loops.labs;
+import java.util.Scanner;
 
 /**
  * Conditions and Loops Exercise 5: Calculator
@@ -16,4 +17,22 @@ package labs_examples.conditions_loops.labs;
  */
 
 public class Exercise_05 {
+    public static void main(String[] args)
+            throws java.io.IOException {
+
+        Scanner s = new Scanner(System.in);
+
+        System.out.println("Please input two integers.");
+        int val1 = s.nextInt();
+        int val2 = s.nextInt();
+
+        int sum = 0;
+        for (int i = val1; i <= val2; i++) {
+            sum += i;
+        }
+        double avg = 1.0 * sum / (val2 - val1 + 1);
+
+        System.out.println("Sum: " + sum);
+        System.out.println("Average: " + avg);
+    }
 }
