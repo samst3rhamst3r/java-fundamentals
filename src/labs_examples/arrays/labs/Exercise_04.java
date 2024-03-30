@@ -9,5 +9,17 @@ package labs_examples.arrays.labs;
  */
 
 public class Exercise_04 {
+    public static void main(String[] args) {
+        int[][] a = {
+                {1, 2, 3},
+                {23, 34},
+                {5, 67, 100, 234, 3}
+        };
 
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[i].length; j++) {
+                System.out.println(a[i][j]);
+            }
+        }
+    }
 }

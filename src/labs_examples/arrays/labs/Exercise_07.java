@@ -1,5 +1,7 @@
 package labs_examples.arrays.labs;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 /**
  *  ArrayLists
  *
@@ -10,4 +12,14 @@ package labs_examples.arrays.labs;
  *
  */
 public class Exercise_07 {
+    public static void main(String[] args) {
+        ArrayList<String> a = new ArrayList<String>();
+
+        for (char c = 'a'; c != 'm'; c++) {
+            a.add(String.valueOf(c));
+        }
+        for (int i = 0; i < a.size(); i++) {
+            System.out.println(a.get(i));
+        }
+    }
 }

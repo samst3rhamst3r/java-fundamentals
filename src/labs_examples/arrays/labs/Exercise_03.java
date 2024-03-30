@@ -18,6 +18,24 @@ package labs_examples.arrays.labs;
 public class Exercise_03 {
 
     public static void main(String[] args) {
-        System.out.println("Wow");
+
+        final int SIZE = 5;
+        final int FACTOR = 3;
+
+        int[][] a = new int[SIZE][SIZE];
+
+        int val = FACTOR;
+        for (int row = 0; row < SIZE; row++) {
+            for (int col = 0; col < SIZE; col++) {
+                a[row][col] = val;
+                val += FACTOR;
+            }
+        }
+        for (int row = 0; row < SIZE; row++) {
+            for (int col = 0; col < SIZE; col++) {
+                System.out.print(a[row][col] + "\t");
+            }
+            System.out.println();
+        }
     }
 }
